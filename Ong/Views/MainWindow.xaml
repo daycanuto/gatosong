@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ong"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="ONG Gatos" Height="350" Width="525">
     <Grid>
         <Menu x:Name="Menu" Height="30" VerticalAlignment="Top" Margin="10,0,0,0">
             <MenuItem Width="70" x:Name="menu" Height="30" Header="Cadastrar" >
@@ -13,7 +13,7 @@
                 <MenuItem x:Name="menuCadastroAdotante" Header="Adotante" HorizontalAlignment="Left" Width="140" Click="menuCadastroAdotante_Click"/>
                 <MenuItem x:Name="menuAdocao" Header="Adoção" HorizontalAlignment="Left" Width="140" Click="menuAdocao_Click"/>
                 <Separator HorizontalAlignment="Left" Height="2" Width="140"/>
-                <MenuItem x:Name="menuSair" Header="Sair" HorizontalAlignment="Left" Width="140" Margin="4,0,-4,0" Height="27" />
+                <MenuItem x:Name="menuSair" Header="Sair" HorizontalAlignment="Left" Width="140" Margin="4,0,-4,0" Height="27" Click="menuSair_Click" />
                 
 
             </MenuItem>

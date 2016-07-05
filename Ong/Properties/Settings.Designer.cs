@@ -33,5 +33,16 @@ namespace Ong.Properties {
                 return ((string)(this["dsBancoConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=Ong.DAL.Context;Integrated Sec" +
+            "urity=True")]
+        public string Ong_DAL_ContextConnectionString {
+            get {
+                return ((string)(this["Ong_DAL_ContextConnectionString"]));
+            }
+        }
     }
 }

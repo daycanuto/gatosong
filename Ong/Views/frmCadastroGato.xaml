@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ong.Views"
         mc:Ignorable="d"
-        Title="frmCadastroGato" Height="350" Width="390">
+        Title="Cadastro Gato" Height="350" Width="390">
     <Grid Margin="0,0,0,1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="77*"/>

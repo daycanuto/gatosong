@@ -43,6 +43,21 @@ namespace Ong
             frmCadastroAdocao frmCadastroAdocao = new frmCadastroAdocao();
             frmCadastroAdocao.ShowDialog();
         }
+
+        private void menuSair_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("Deseja sair?", "Saindo...",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) ==
+                MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
 

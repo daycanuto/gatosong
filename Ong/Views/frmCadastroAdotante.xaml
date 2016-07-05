@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ong.Views"
         mc:Ignorable="d"
-        Title="frmCadastroAdotante" Height="387" Width="396">
+        Title="Cadastro Adotante" Height="387" Width="396">
     <Grid>
         <Label x:Name="Nome" Content="Nome :" HorizontalAlignment="Left" Margin="12,129,0,0" VerticalAlignment="Top" Width="67"/>
         <Label x:Name="Idade" Content="Idade :" HorizontalAlignment="Left" Margin="12,168,0,0" VerticalAlignment="Top" Width="67"/>
