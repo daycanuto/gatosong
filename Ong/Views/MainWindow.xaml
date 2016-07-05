@@ -17,7 +17,11 @@
                 
 
             </MenuItem>
-            <MenuItem Header="Relatórios" Width="70"/>
+            <MenuItem Header="Relatórios" Width="70">
+                <MenuItem x:Name="RelatorioAdotados" Header="Adotados" HorizontalAlignment="Left" Width="140" Click="RelatorioAdotados_Click"/>
+                <MenuItem x:Name="RelatorioCor" Header="Cor" HorizontalAlignment="Left" Width="140" Click="RelatorioCor_Click"/>
+                <MenuItem x:Name="RelatorioIdade" Header="Idade" HorizontalAlignment="Left" Width="140" Click="RelatorioIdade_Click"/>
+            </MenuItem>
         </Menu>
     </Grid>
 </Window>

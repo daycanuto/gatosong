@@ -1,6 +1,6 @@
 ﻿namespace Ong.Views
 {
-    partial class frmAdotados
+    partial class frmIdade
     {
         /// <summary>
         /// Required designer variable.
@@ -30,51 +30,50 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.gatoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dsBanco = new Ong.BancoDs.dsBanco();
-            this.dsAdocaoStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dsAdocaoStatusTableAdapter = new Ong.BancoDs.dsBancoTableAdapters.dsAdocaoStatusTableAdapter();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.gatoTableAdapter = new Ong.BancoDs.dsBancoTableAdapters.GatoTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.gatoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBanco)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsAdocaoStatusBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // gatoBindingSource
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "ReportAdotados";
-            reportDataSource1.Value = this.dsAdocaoStatusBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Ong.Reports.ReportAdotados.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(619, 261);
-            this.reportViewer1.TabIndex = 0;
+            this.gatoBindingSource.DataMember = "Gato";
+            this.gatoBindingSource.DataSource = this.dsBanco;
             // 
             // dsBanco
             // 
             this.dsBanco.DataSetName = "dsBanco";
             this.dsBanco.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dsAdocaoStatusBindingSource
+            // reportViewer1
             // 
-            this.dsAdocaoStatusBindingSource.DataMember = "dsAdocaoStatus";
-            this.dsAdocaoStatusBindingSource.DataSource = this.dsBanco;
+            reportDataSource1.Name = "ReportIdade";
+            reportDataSource1.Value = this.gatoBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Ong.Reports.ReportIdade.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(-1, 1);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(670, 260);
+            this.reportViewer1.TabIndex = 0;
             // 
-            // dsAdocaoStatusTableAdapter
+            // gatoTableAdapter
             // 
-            this.dsAdocaoStatusTableAdapter.ClearBeforeFill = true;
+            this.gatoTableAdapter.ClearBeforeFill = true;
             // 
-            // frmAdotados
+            // frmIdade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 261);
+            this.ClientSize = new System.Drawing.Size(668, 261);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "frmAdotados";
-            this.Text = "Gatos Adotados";
-            this.Load += new System.EventHandler(this.frmAdotados_Load);
+            this.Name = "frmIdade";
+            this.Text = "frmIdade";
+            this.Load += new System.EventHandler(this.frmIdade_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gatoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsBanco)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dsAdocaoStatusBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,7 +82,7 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private BancoDs.dsBanco dsBanco;
-        private System.Windows.Forms.BindingSource dsAdocaoStatusBindingSource;
-        private BancoDs.dsBancoTableAdapters.dsAdocaoStatusTableAdapter dsAdocaoStatusTableAdapter;
+        private System.Windows.Forms.BindingSource gatoBindingSource;
+        private BancoDs.dsBancoTableAdapters.GatoTableAdapter gatoTableAdapter;
     }
 }

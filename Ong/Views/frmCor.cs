@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Ong.Views
 {
-    public partial class frmAdotados : Form
+    public partial class frmCor : Form
     {
-        public frmAdotados()
+        public frmCor()
         {
             InitializeComponent();
         }
 
-        private void frmAdotados_Load(object sender, EventArgs e)
+        private void frmCor_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dsBanco.dsAdocaoStatus' table. You can move, or remove it, as needed.
-            this.dsAdocaoStatusTableAdapter.Fill(this.dsBanco.dsAdocaoStatus);
+            // TODO: This line of code loads data into the 'dsBanco.Gato' table. You can move, or remove it, as needed.
+            this.gatoTableAdapter.Fill(this.dsBanco.Gato);
 
             this.reportViewer1.RefreshReport();
         }

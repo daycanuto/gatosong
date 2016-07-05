@@ -58,6 +58,24 @@ namespace Ong
                 e.Cancel = true;
             }
         }
+
+        private void RelatorioAdotados_Click(object sender, RoutedEventArgs e)
+        {
+            frmAdotados relatorio = new frmAdotados();
+            relatorio.ShowDialog();
+        }
+
+        private void RelatorioCor_Click(object sender, RoutedEventArgs e)
+        {
+            frmCor relatorio = new frmCor();
+            relatorio.ShowDialog();
+        }
+
+        private void RelatorioIdade_Click(object sender, RoutedEventArgs e)
+        {
+            frmIdade relatorio = new frmIdade();
+            relatorio.ShowDialog();
+        }
     }
 }
 
