@@ -1,0 +1,23 @@
+﻿<Window x:Class="Ong.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ong"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Menu x:Name="Menu" Height="30" VerticalAlignment="Top" Margin="10,0,0,0">
+            <MenuItem Width="70" x:Name="menu" Height="30" Header="Cadastrar" >
+                <MenuItem x:Name="menuCadastroGato"  Header="Gato" HorizontalAlignment="Right" Width="140" Click="menuCadastroGato_Click"/>
+                <MenuItem x:Name="menuCadastroAdotante" Header="Adotante" HorizontalAlignment="Left" Width="140" Click="menuCadastroAdotante_Click"/>
+                <MenuItem x:Name="menuAdocao" Header="Adoção" HorizontalAlignment="Left" Width="140" Click="menuAdocao_Click"/>
+                <Separator HorizontalAlignment="Left" Height="2" Width="140"/>
+                <MenuItem x:Name="menuSair" Header="Sair" HorizontalAlignment="Left" Width="140" Margin="4,0,-4,0" Height="27" />
+                
+
+            </MenuItem>
+            <MenuItem Header="Relatórios" Width="70"/>
+        </Menu>
+    </Grid>
+</Window>

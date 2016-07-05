@@ -1,0 +1,36 @@
+﻿<Window x:Class="Ong.Views.frmCadastroGato"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ong.Views"
+        mc:Ignorable="d"
+        Title="frmCadastroGato" Height="350" Width="390">
+    <Grid Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="215*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="NomeGato" Content="Nome :" HorizontalAlignment="Left" Margin="12,129,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label x:Name="IdadeGato" Content="Idade :" HorizontalAlignment="Left" Margin="12,168,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label x:Name="CorGato" Content="Cor :" HorizontalAlignment="Left" Margin="12,204,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label x:Name="StatusGato" Content="Status :" HorizontalAlignment="Left" Margin="12,243,0,0" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="txtNomeGato" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="2,133,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="269"/>
+        <TextBox x:Name="txtCorGato" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="2,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="12,285,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click" />
+        <Button x:Name="btnRemover" Content="Remover" HorizontalAlignment="Left" Margin="2,285,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="btnRemover_Click"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="98,285,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" RenderTransformOrigin="0.509,0.601" Click="btnAlterar_Click"/>
+        <Button x:Name="btnGravar" Content="Gravar" Grid.Column="1" HorizontalAlignment="Left" Margin="196,285,0,0" VerticalAlignment="Top" Width="75" Click="btnGravar_Click"/>
+        <Separator Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="12,100,0,0" VerticalAlignment="Top" Width="360"/>
+        <Label x:Name="BuscarGatoPorNome" Content="Nome :" HorizontalAlignment="Left" Margin="12,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBuscarGatoNome" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="0,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+        <Button x:Name="btnBuscarGatoPorNome" Content="Buscar" Grid.Column="1" HorizontalAlignment="Left" Margin="196,67,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscarGatoPorNome_Click"/>
+        <DatePicker x:Name="txtIdadeGato" Grid.Column="1" HorizontalAlignment="Left" Margin="2,170,0,0" VerticalAlignment="Top" Width="269"/>
+        <ComboBox x:Name="cmbGatoStatus" Grid.Column="1" HorizontalAlignment="Left" Margin="2,243,0,0" VerticalAlignment="Top" Width="146" Height="26">
+            <ComboBoxItem Content="Livre" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Reservado" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Adotado" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
