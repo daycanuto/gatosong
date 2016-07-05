@@ -33,7 +33,7 @@ namespace Ong.Views
 
             g = new Gato();
             g.GatoNome = txtNomeGato.Text;
-            g.GatoIdade = txtIdadeGato.Text;
+            g.GatoIdade = txtIdade.Text;
             g.GatoCor = txtCorGato.Text;
             g.GatoStatus =cmbGatoStatus.Text;
 
@@ -49,7 +49,7 @@ namespace Ong.Views
             }
 
             txtNomeGato.Clear();
-            txtIdadeGato.Text ="";
+            txtIdade.Text ="";
             txtCorGato.Clear();
             cmbGatoStatus.Text = String.Empty;
             txtNomeGato.Focus();
@@ -65,7 +65,7 @@ namespace Ong.Views
                 {
                     txtNomeGato.Text = g.GatoNome;
                     txtCorGato.Text = g.GatoCor;
-                    txtIdadeGato.Text = g.GatoIdade;
+                    txtIdade.Text = g.GatoIdade;
                     cmbGatoStatus.Text = g.GatoStatus;       
                     HabilitarBotoes();
                 }
@@ -98,7 +98,7 @@ namespace Ong.Views
             txtBuscarGatoNome.Clear();
             txtNomeGato.Clear();
             txtCorGato.Clear();
-            txtIdadeGato.Text="";
+            txtIdade.Text="";
             cmbGatoStatus.Text=String.Empty;
             txtBuscarGatoNome.Focus();
         }
@@ -137,7 +137,7 @@ namespace Ong.Views
                 MessageBoxResult.Yes)
             {
                 g.GatoNome = txtNomeGato.Text;
-                g.GatoIdade = txtIdadeGato.Text;
+                g.GatoIdade = txtIdade.Text;
                 g.GatoCor = txtCorGato.Text;
                 g.GatoStatus = cmbGatoStatus.Text;             
                 if (GatoDAO.AlterarGato(g))
